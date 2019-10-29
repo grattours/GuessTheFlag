@@ -21,10 +21,13 @@ struct ContentView: View {
     @State private var currentAnswer = 0
     
     var body: some View {
+        
         ZStack {
+            
             Color.blue.edgesIgnoringSafeArea(.all)
             AngularGradient(gradient: Gradient(colors: [.blue, .black]), center: .bottomTrailing).edgesIgnoringSafeArea(.all)
             VStack(spacing: 30) {
+                Spacer()
                 VStack {
                     Text("clic le drapeaux de : ")
                         .foregroundColor(.white)
